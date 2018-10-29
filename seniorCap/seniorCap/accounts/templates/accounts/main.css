@@ -1,0 +1,112 @@
+
+/* Only Used for Name specs*/
+h1.name{
+  color: white;
+  font-size: 50px;
+  font-style: italic;
+  font-family: monospace;
+  font-weight: bold;
+  background-color: silver;
+  text-align: center;
+  float: center;
+  padding: 15px;
+}
+/* Only Used for title specs*/
+h2.title{
+  text-align: center;
+  text-decoration: underline;
+  font-family: monospace;
+  font-weight: bold;
+  color: darkgray;
+  padding: 15px;
+}
+/* Only Used for quote specs*/
+h3.q{
+  text-align: center;
+  text-decoration: underline;
+  font-family: monospace;
+  font-weight: bold;
+  color: darkgray;
+  padding: 15px;
+
+}
+/* Only Used for name of the author specs*/
+h4.a{
+  text-align: center;
+  text-decoration: underline;
+  font-family: monospace;
+  font-weight: bold;
+  color: black;
+  padding: 15px;
+}
+h2{
+  text-align: center;
+  font-size: 25px;
+  text-decoration: underline;
+  font-family: monospace;
+  font-weight: bold;
+  color: silver;
+  padding: 5px 10px 20px 10px;
+}
+/* Only Used for selfie specs*/
+img.self{
+    transform:rotate(90deg);
+    float:inline-block;
+    width:300px;
+    height:350px;
+    padding: 20px;
+}
+
+
+/* Only Used for link specs*/
+a:hover{
+  color: gold;
+  text-decoration: underline;
+}
+a:visited{
+  color: snow;
+}
+
+/* Only Used for Bio specs*/
+div.bio{
+  text-indent: 15px;
+  font-size: 23px;
+  font-style: italic;
+  background-color: #778899;
+  font-family: monospace;
+  color:black;
+  padding: 100px;
+  align-self: center;
+}
+
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
