@@ -34,9 +34,7 @@ INSTALLED_APPS = [
     'home.apps.HomeConfig', # CM 11/3
     'login.apps.LoginConfig', # CM 11/3
     'crispy_forms', # CM 11/4 for making forms
-    'home',
     'accounts',
-    'login',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
