@@ -1,4 +1,17 @@
 {% extends "base-not-loggedin.html" %}
+{% load static %}
 {% block content %}
-    <h1>Emploid Home</h1>
+<div class="jumbotron jumbotron-fluid" style="background-image: url({% static 'architecture-buildings-business-167200.jpg' %}); background-size: 100%;">
+  <h1 class="display-4" style="text-shadow: #ffffff; color: 09B300">Find your dream job</h1>
+  <p class="lead">Don't wait for opporutities to fall out of the sky, start your career today with Emploid.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </p>
+</div>
+<div class="jumbotron jumbotron-fluid" style="background-image: url({% static 'architecture-buildings-business-167200.jpg' %}); background-size: 100%;">
+	  <div class="container">
+		<h1>Find your dream job</h1> 
+		<p>Bootstrap is the most popular HTML, CSS...</p> 
+	  </div>
+</div>
 {% endblock content %}

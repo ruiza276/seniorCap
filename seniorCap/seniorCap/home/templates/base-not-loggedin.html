@@ -1,8 +1,14 @@
 <!-- THIS IS WHERE THE HEADER/FOOTER WILL GO! USING TEMPLATE INHERRITENCE--> 
-
+{% load static %}
 <!doctype html>
 <html>
   <head>
+    <!-- for home page -->
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.orange-indigo.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
 
     <!-- BOOTSTRAP -->
     <meta charset="utf-8">

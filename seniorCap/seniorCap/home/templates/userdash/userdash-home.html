@@ -1,4 +1,30 @@
 {% extends "base-loggedin.html" %}
 {% block content %}
-    <h1>Emploid Home</h1>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="content-section">
+					<h3> Student Dashboard </h3>
+					<ul class="list-group">
+						<li class="list-group-item list-group-item-light"><a href="/userdash/"> View Resume</a></li>
+						<li class="list-group-item list-group-item-light"><a href="/userdash/"> Edit Resume</a></li>
+						<li class="list-group-item list-group-item-light"><a href="/userdash/"> User Settings</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<div class="container">
+					<h2>Recommended Jobs</h2>
+					<ul class="list-group">
+						<li class="list-group-item list-group-item-light">Job 1</li>
+						<li class="list-group-item list-group-item-light">Job 2</li>
+						<li class="list-group-item list-group-item-light">Job 3</li>
+						<li class="list-group-item list-group-item-light">Job 4</li> 
+						<li class="list-group-item list-group-item-light">Job 5</li>
+					</ul>
+			</div>
+
+		</div>
+		<padding></padding>
+	</div>
 {% endblock content %}

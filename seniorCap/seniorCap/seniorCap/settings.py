@@ -34,7 +34,6 @@ INSTALLED_APPS = [
     'home.apps.HomeConfig', # CM 11/3
     'login.apps.LoginConfig', # CM 11/3
     'crispy_forms', # CM 11/4 for making forms
-    'accounts',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -123,5 +122,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-CRISPY_TEMPLATE_PACK = "bootstrap4"
-LOGIN_REDIRECT_URL = "userdash-home"
+# CM 11/4 for cripsy forms to use bs4, not bs2
+CRISPY_TEMPLATE__PACK="bootstrap4" # CM 11/4 for cripsy forms to use bs4, not bs2
+
+# CM 11/4 - For login to redirect to userdash
+LOGIN_REDIRECT_URL = 'userdash-home'
+
+STATICFILES_DIRS = (
+'/ Users/Caroline/Desktop/Senior Capstone/Master/seniorCap-master/seniorCap/seniorCap/home/static',
+)
