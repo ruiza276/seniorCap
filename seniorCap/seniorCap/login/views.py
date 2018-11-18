@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.shortcuts import HttpResponse
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
+from .models import Major
 from .forms import UserRegisterForm
 
 # urls redirects to views
