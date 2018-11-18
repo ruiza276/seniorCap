@@ -6,7 +6,9 @@ from login.models import Major
 # Create your views here.
 
 def dash(request):
-	return render(request, "userdash/userdash-home.html")
+	context = {'names': Major.objects.all()}
+	return render(request, "userdash/userdash-home.html", context)
+
 
 def resume(request):
 	#obj = Major.objects.get(id=2)
