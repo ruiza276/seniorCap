@@ -1,0 +1,14 @@
+{% extends "base-loggedin.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<h1>Course Selection Page</h1>
+<form method="post">
+  <fieldset class="form-group">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+<!-- TODO: look into forms to add courses to database -->
+{% endblock content %}

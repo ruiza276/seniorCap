@@ -6,26 +6,26 @@
 				<div class="content-section">
 					<h3> Student Dashboard </h3>
 					<ul class="list-group">
-						<li class="list-group-item list-group-item-light"><a href="/userdash/resume"> View Resume</a></li>
-						<li class="list-group-item list-group-item-light"><a href="/userdash/"> Edit Resume</a></li>
+						<li class="list-group-item list-group-item-light"><a href="/userdash/"> View Courses</a></li>
+						<li class="list-group-item list-group-item-light"><a href="/profilesetup/"> Edit Courses</a></li>
 						<li class="list-group-item list-group-item-light"><a href="/userdash/"> User Settings</a></li>
 					</ul>
 				</div>
 			</div>
 			<div class="col-md-8">
 				<div class="container">
-					<h2>Recommended Jobs</h2>
-					<h2>Resumne</h2>
-					{% for name in names %}
-						<h2>{{ name.major_name }}</h2>
-					{% endfor %}
-					<ul class="list-group">
-						<li class="list-group-item list-group-item-light">Job 1</li>
-						<li class="list-group-item list-group-item-light">Job 2</li>
-						<li class="list-group-item list-group-item-light">Job 3</li>
-						<li class="list-group-item list-group-item-light">Job 4</li>
-						<li class="list-group-item list-group-item-light">Job 5</li>
-					</ul>
+					{% if Jobs %}
+						<h2>Recommended Jobs ({{ len }})</h2>
+						{% for result in results %}
+								<li>{{result.job_title}}</li>
+						{% endfor %}
+
+					{% else %}
+						<h2>Select Courses to find jobs.</h2>
+					{% endif %}
+
+
+
 			</div>
 
 		</div>

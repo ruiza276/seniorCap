@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'courseSelect.apps.CourseselectConfig',
 ]
 
 MIDDLEWARE = [
@@ -120,6 +121,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
+AUTH_PROFILE_MODULE = 'login.UserProfile'
 STATIC_URL = '/static/'
 
 # CM 11/4 for cripsy forms to use bs4, not bs2

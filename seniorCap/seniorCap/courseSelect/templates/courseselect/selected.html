@@ -1,0 +1,11 @@
+{% extends "base-loggedin.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<h1>User Created</h1>
+<h2>Courses added:</h2>
+
+  <h3>{{form.major.major_name}}</h3>
+
+
+{% endblock content %}

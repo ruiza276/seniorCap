@@ -22,7 +22,8 @@ urlpatterns = [
     path('', include('home.urls')), # home and about
     path("login/", auth_views.LoginView.as_view(template_name='login/main_login.html'), name="login"),
     path("logout/", auth_views.LogoutView.as_view(template_name='login/logout.html'), name="logout"),
-    path('register/', register_views.register, name="register"), 
+    path('register/', register_views.register, name="register"),
     path('userdash/', include('userdash.urls')),
     path('admindash/', include('admindash.urls')),
+    path('profilesetup/', include('courseSelect.urls'))
 ]
